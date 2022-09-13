@@ -21,7 +21,7 @@
             this.username = this.$store.getters.getUsername
             //用户团队获取请求
             axios({
-                url:'http://localhost:8080/Team/GetTeamByName',
+                url:'http://1.15.226.69:8080/Team/GetTeamByName',
                 method: "post",
                 data:{
                     username:this.username

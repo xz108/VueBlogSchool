@@ -59,7 +59,7 @@
                     if(pl===cl){ //密码确认
                         //注册接口
                         axios({
-                            url:'http://localhost:8080/User/register',
+                            url:'http://1.15.226.69:8080/User/register',
                             method: "post",
                             data: {
                                 username:this.siginForm.username,

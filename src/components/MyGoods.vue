@@ -17,7 +17,7 @@
             this.username = this.$store.getters.getUsername
             //用户货物获取请求
             axios({
-                url:'http://localhost:8080/Good/GetGoodByname',
+                url:'http://1.15.226.69:8080/Good/GetGoodByname',
                 method: "post",
                 data:{
                     username:this.username

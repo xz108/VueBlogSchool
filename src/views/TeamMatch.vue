@@ -118,7 +118,7 @@
             this.avatar = this.$store.getters.getAvatar
             //团队数据获取请求
             axios({
-                url:'http://localhost:8080/Team/getApplication',
+                url:'http://1.15.226.69:8080/Team/getApplication',
                 method: "post",
                 data:{
                     team_id:'1'
@@ -195,7 +195,7 @@
                         if(f){
                             //加入团队请求
                             axios({
-                                url:'http://localhost:8080/Team/postApplication',
+                                url:'http://1.15.226.69:8080/Team/postApplication',
                                 method: "post",
                                 data:{
                                     team_id: this.teams[index].team_id,
@@ -233,7 +233,7 @@
                 if(kl.length>0){
                     //团队搜索接口
                     axios({
-                        url:'http://localhost:8080/Team/SearchTeam',
+                        url:'http://1.15.226.69:8080/Team/SearchTeam',
                         method: "post",
                         data:{
                             key:this.key
@@ -261,7 +261,7 @@
                     if(ml.length>0){
                         //团队信息发送请求
                         axios({
-                            url:'http://localhost:8080/Team/postTetam',
+                            url:'http://1.15.226.69:8080/Team/postTetam',
                             method: "post",
                             data:{
                                 title:this.newTeam.title,

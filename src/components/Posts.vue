@@ -237,7 +237,7 @@
             this.avatar = this.$store.getters.getAvatar
             //置顶帖获取请求
             axios({
-                url:'http://localhost:8080/Blog/QueryAllTopBlog',
+                url:'http://1.15.226.69:8080/Blog/QueryAllTopBlog',
                 method: "post"
             }).then(res => {
                 this.topposts=res.data
@@ -245,7 +245,7 @@
             })
             //普通帖获取请求
             axios({
-                url:'http://localhost:8080/Blog/QueryAllBlog',
+                url:'http://1.15.226.69:8080/Blog/QueryAllBlog',
                 method: "post"
             }).then(res => {
                 this.posts=res.data
@@ -256,7 +256,7 @@
             })
             //热度榜数据获取请求
             axios({
-                url:'http://localhost:8080/Blog/QueryFavorite',
+                url:'http://1.15.226.69:8080/Blog/QueryFavorite',
                 method: "post"
             }).then(res => {
                 this.hots=res.data
@@ -296,7 +296,7 @@
                     if(cl.length>0){
                         //帖子信息发送请求
                         axios({
-                            url:'http://localhost:8080/Blog/postblog',
+                            url:'http://1.15.226.69:8080/Blog/postblog',
                             method: "post",
                             data:{
                                 title:this.formdata.title,
@@ -338,7 +338,7 @@
                 if(kl.length>0){
                     //帖子搜索接口
                     axios({
-                        url:'http://localhost:8080/Blog/searchBlog',
+                        url:'http://1.15.226.69:8080/Blog/searchBlog',
                         method: "post",
                         data:{
                             key:this.key

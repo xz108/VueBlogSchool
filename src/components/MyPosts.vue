@@ -18,7 +18,7 @@
             this.username = this.$store.getters.getUsername
             //用户帖子获取请求
             axios({
-                url:'http://localhost:8080/Blog/GetUserblog',
+                url:'http://1.15.226.69:8080/Blog/GetUserblog',
                 method: "post",
                 data:{
                     username:this.username

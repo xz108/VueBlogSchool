@@ -58,7 +58,7 @@
                     }
                     //修改信息请求
                     axios({
-                        url:'http://localhost:8080/User/updateUser',
+                        url:'http://1.15.226.69:8080/User/updateUser',
                         method: "post",
                         data:{
                             avatar:this.imageUrl,

@@ -146,7 +146,7 @@
             this.avatar = this.$store.getters.getAvatar
             //商品数据获取请求
             axios({
-                url:'http://localhost:8080/Good/GetGoods',
+                url:'http://1.15.226.69:8080/Good/GetGoods',
                 method: "post"
             }).then(res => {
                 this.goods=res.data
@@ -176,7 +176,7 @@
                     if(dl.length>0){
                         //货物信息发送请求
                         axios({
-                            url:'http://localhost:8080/Good/PostGood',
+                            url:'http://1.15.226.69:8080/Good/PostGood',
                             method: "post",
                             data:{
                                 name:this.newGood.name,
@@ -218,7 +218,7 @@
                 if(kl.length>0){
                     //帖子搜索接口
                     axios({
-                        url:'http://localhost:8080/Good/searchGood',
+                        url:'http://1.15.226.69:8080/Good/searchGood',
                         method: "post",
                         data:{
                             key:this.key
@@ -236,7 +236,7 @@
                 //console.log(id)
                 //改变货物状态请求
                 axios({
-                    url:'http://localhost:8080/Good/closeSell',
+                    url:'http://1.15.226.69:8080/Good/closeSell',
                     method: "post",
                     data:{
                         id:id

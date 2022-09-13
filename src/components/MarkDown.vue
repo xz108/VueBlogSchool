@@ -73,7 +73,7 @@ function post(){
       //   headers:{
       //   'Content-Type':'application/x-www-form-urlencoded;charset=utf-8'
       // },
-        url:'http://127.0.0.1:8080/Blog/postblog/',
+        url:'http://1.15.226.69:8080/Blog/postblog/',
         method:'post',
         data:{
           content:markdown.value,

@@ -124,7 +124,7 @@
               if(ul.length>=3&&ul.length<=10&&pl.length>=3&&pl.length<=5){
                   /*登录接口*/
                   axios({
-                      url:'http://localhost:8080/mylogin',
+                      url:'http://1.15.226.69:8080/mylogin',
                       method: "post",
                       data: {
                           username:this.ruleForm.username,

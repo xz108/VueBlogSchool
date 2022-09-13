@@ -136,7 +136,7 @@
             this.type = this.$store.getters.getType
             //根据postId请求帖子数据
             axios({
-                url:'http://localhost:8080/Blog/selectOne',
+                url:'http://1.15.226.69:8080/Blog/selectOne',
                 method: "post",
                 data:{
                     id:this.postId,
@@ -152,7 +152,7 @@
             if(this.type==='blog'){
                 //根据postId请求普通评论数据
                 axios({
-                    url:'http://localhost:8080/comment/listAllComment',
+                    url:'http://1.15.226.69:8080/comment/listAllComment',
                     method: "post",
                     data:{
                         blog_id:this.postId
@@ -164,7 +164,7 @@
             }else{
                 //根据postId请求置顶评论数据
                 axios({
-                    url:'http://localhost:8080/comment/listAlltopComment',
+                    url:'http://1.15.226.69:8080/comment/listAlltopComment',
                     method: "post",
                     data:{
                         blog_id:this.postId
@@ -257,7 +257,7 @@
                     if(this.type=='blog'){
                         //发送普通评论请求
                         axios({
-                            url:'http://localhost:8080/comment/postComment',
+                            url:'http://1.15.226.69:8080/comment/postComment',
                             method: "post",
                             data:{
                                 blog_id:this.postId,
@@ -288,7 +288,7 @@
                     }else{
                         //发送置顶评论请求
                         axios({
-                            url:'http://localhost:8080/comment/postTopComment',
+                            url:'http://1.15.226.69:8080/comment/postTopComment',
                             method: "post",
                             data:{
                                 blog_id:this.postId,
