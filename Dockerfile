@@ -10,5 +10,6 @@ RUN npm install
 
 RUN npm run build
 
-EXPOSE 8081
-CMD [ "http-server", "dist" ]
+EXPOSE 8088
+
+CMD [ "http-server", "-p","8088","dist" ]
